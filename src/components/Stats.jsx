@@ -3,11 +3,12 @@ import {useContext} from "react";
 import {TwitterContext} from "../utils/context.js";
 
 const Stats = () => {
-    const{user,stats}=useContext(TwitterContext);
+    const {user, stats} = useContext(TwitterContext);
+
     return (
         <div className={'user-stats'}>
             <div>
-                <Avatar />
+                <Avatar/>
                 {user.name}
             </div>
             <div className={'stats'}>

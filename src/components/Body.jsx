@@ -4,7 +4,7 @@ import Content from "./Content.jsx";
 const Body = () => {
     return (
         <div className={'body'}>
-            <Sidebar />
+            <Sidebar/>
             <Content/>
         </div>
     );
