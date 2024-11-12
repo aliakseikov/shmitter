@@ -3,7 +3,7 @@ import Stats from "./Stats.jsx";
 const Sidebar = () => {
     return (
         <div className={'sidebar'}>
-            <Stats  />
+            <Stats />
         </div>
     );
 };

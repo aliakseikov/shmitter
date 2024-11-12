@@ -3,18 +3,20 @@ import {useContext} from "react";
 import {TwitterContext} from "../utils/context.js";
 
 const Stats = () => {
-    const{user,stats}=useContext(TwitterContext);
+    const {user, stats,addFollowers, addFollowing,subFollowers,subFollowing} = useContext(TwitterContext);
     return (
         <div className={'user-stats'}>
             <div>
-                <Avatar />
-                {user.name}
+                <Avatar/>
+               <div>
+                   {user.name}
+               </div>
             </div>
             <div className={'stats'}>
-                <div>
+                <div onClick={addFollowers} onContextMenu={subFollowers}>
                     Followers: {stats.followers}
                 </div>
-                <div>
+                <div onClick={addFollowing} onContextMenu={subFollowing}>
                     Following: {stats.following}
                 </div>
             </div>
